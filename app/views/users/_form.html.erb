@@ -1,0 +1,6 @@
+<%= simple_form_for(@user) do |f| %>
+  <%= f.input :first_name, hint: "can't be blank" %>
+  <%= f.input :last_name %>
+  <%= f.input :email, hint: "please use vaild structure ie foo@foobar.com" %>
+  <%= f.button :submit %>
+<% end %>
